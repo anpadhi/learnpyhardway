@@ -7,6 +7,7 @@ Change the current working directory to your local project.
 Initialize the local directory as a Git repository.
 
 git init
+
 Add the files in your new local repository. This stages them for the first commit.
 
 git add .
@@ -27,3 +28,26 @@ Push the changes in your local repository to GitHub.
 
 git push -u origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+
+==============================
+Adding a remote
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+
+The git remote add command takes two arguments:
+
+A remote name, for example, origin
+A remote URL, for example, https://github.com/user/repo.git
+For example:
+
+git remote add origin https://github.com/user/repo.git
+# Set a new remote
+
+git remote -v
+# Verify new remote
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+Not sure which URL to use? Check out "Which remote URL should I use?"
+
+
+===============================
